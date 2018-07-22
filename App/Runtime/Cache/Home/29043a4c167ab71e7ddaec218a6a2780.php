@@ -1,9 +1,4 @@
 <?php if (!defined('THINK_PATH')) exit();?><style type="text/css">
-	.w-930{
-		width:930px;
-		margin:0 auto;
-		padding-top:100px;
-	}
 	.loginBox{
 		width:360px;
 		height: 400px;
@@ -75,7 +70,11 @@
 				</div>
 				<div class="input-box">
 					<span class="uic glyphicon glyphicon-envelope"></span>
-					<input type="text" class="user form-control reg_email" placeholder="邮箱" />
+					<input type="email" class="user form-control reg_email" placeholder="邮箱" />
+				</div>
+				<div class="input-box">
+					<span class="uic glyphicon glyphicon-user"></span>
+					<input type="text" class="user form-control reg_real_user" placeholder="真实姓名" />
 				</div>
 				<div class="input-box">
 					<span class="uic glyphicon glyphicon-lock"></span>
@@ -99,23 +98,43 @@
 		$('.acTitle').html('立即注册');
 	})
 	$('.username').focus();
-	$('.username,.password').focus(function(){
-		$('.err').hide();
+	$('.username,.password,.reg_username,.reg_password1,.reg_password2,.reg_real_user,.reg_email').focus(function(){
+		$('.err,.reg_err').hide();
 	})
 </script>
 <script>
+	$('.cg').hide();
 	$('.login_btn').click(function(){
 		var data = {'username':$('.username').val(),'password':$('.password').val(),'vertify':$('.vertify').val()};
 		$.ajax({
 			type:"post",
-			url:"/Home/Login/act?act=Login",
+			url:"/Home/Login/act?act=login",
 			data:data,
 			dataType:"json",
 			success:function(e){
 				if(e.code == 200){
-					$('.userinfo').text('欢迎您，'+e.data.username);
+					window.location.reload();
 				}else{
 					$('.err').show().text('*'+e.msg);
+				}
+			}
+		})
+	})
+	$('.reg_btn').click(function(){
+		var data = {'username':$('.reg_username').val(),'password1':$('.reg_password1').val(),'password2':$('.reg_password2').val(),'email':$('.reg_email').val(),'real_name':$('.reg_real_user').val(),'vertify':$('.reg_vertify').val()};
+		$.ajax({
+			type:"post",
+			url:"/Home/Login/act?act=register",
+			data:data,
+			dataType:"json",
+			success:function(e){
+				if(e.code == 200){
+					$('.cg').show();
+					setTimeout(function(){
+						$('.cg').hide();
+					},1000);
+				}else{
+					$('.reg_err').show().text('*'+e.msg);
 				}
 			}
 		})

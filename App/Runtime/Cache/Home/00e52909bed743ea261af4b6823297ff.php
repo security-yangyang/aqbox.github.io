@@ -2,6 +2,7 @@
 <html>
 	<head>
 		<meta charset="utf-8" />
+		<!-- <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"> -->
 		<title>首页</title>
 		<script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
 		<script src="/static/js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
@@ -23,7 +24,7 @@
 			</div>
 		</div>
 		<!--容器布局start-->
-		<div class="container"">
+		<div class="container" style="width: 1170px;max-width: none !important; ">
 			<!--导航栏start-->
 			<div class="navBar">
 				<ul class="true">

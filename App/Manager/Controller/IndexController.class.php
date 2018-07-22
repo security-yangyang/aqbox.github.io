@@ -17,6 +17,15 @@ class IndexController extends Controller
         }
     }
 
+    public function create()
+    {
+        if (isset($_SESSION['MANAGER'])) {
+            $this->display();
+        } else {
+            echo "<script>window.location.href='/Manager/Login/index'</script>";
+        }
+    }
+
     protected function emptyContent($par1, $type_text, $strMinLength = 1)
     {
         if (strlen($par1) < $strMinLength) {

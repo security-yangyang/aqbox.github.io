@@ -90,6 +90,7 @@
 		<!--容器布局end-->
 	</body>
 	<script>
+		$('.username').focus();
 		$('input').focus(function(){
 			$('.err').hide();
 		})

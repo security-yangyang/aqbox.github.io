@@ -30,9 +30,9 @@ body,div{
 	float: left;
 }
 .w-930{
-	width:auto;
 	margin:0 auto;
 	padding-top:100px;
+	background:ghostwhite
 }
 .header .w-1200 .userinfo{
 	width:200px;

@@ -41,7 +41,7 @@
 					<input type="text" class="form-control" placeholder="搜索" aria-describedby="basic-addon1">
 					<span class="start_search glyphicon glyphicon-search"></span>
 				</div>
-				<div class="userinfo"><?php echo $_SESSION['REAL_NAME']; ?></div>
+				<div class="userinfo"><?php echo $_SESSION['REAL_NAME'].'&nbsp;&nbsp';if(!empty($_SESSION['REAL_NAME'])){echo '<span class="glyphicon glyphicon-log-out"><a style="color:white;" href="/Home/Login/act?act=logout">注销</a></span>';} ?></div></div>
 			</div>
 		</div>
 		<!--容器布局start-->

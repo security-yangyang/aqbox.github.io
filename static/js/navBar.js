@@ -2,7 +2,7 @@ $height = $(window).height()-140;
 $width = $(window).width();
 $('.navBar').css('height',$height+'px');
 $('.content').css('height',$height+'px');
-$('.w-930').css('height',$height+'px').css('width',$width+'px');
+
 
 $('.dbzx').click(function(){
 	$('.dbzx_icon').removeClass('glyphicon-chevron-down').addClass('glyphicon-chevron-up');
