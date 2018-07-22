@@ -30,7 +30,7 @@ $('.zxfb').click(function(){
 $('.bzgl,.lgb').click(function(){
 	$.ajax({
 		type:"get",
-		url:"/Home/Biaozhun/lgb",
+		url:"/Manager/Standard/lgb",
 		dataType:"html",
 		success:function(ret){
 			if(ret == 400){
@@ -45,7 +45,7 @@ $('.bzgl,.lgb').click(function(){
 $('.xgb').click(function(){
 	$.ajax({
 		type:"get",
-		url:"/Home/Biaozhun/xgb",
+		url:"/Manager/Standard/xgb",
 		dataType:"html",
 		success:function(ret){
 			if(ret == 400){
@@ -60,7 +60,7 @@ $('.xgb').click(function(){
 $('.hybz').click(function(){
 	$.ajax({
 		type:"get",
-		url:"/Home/Biaozhun/hybz",
+		url:"/Manager/Standard/hybz",
 		dataType:"html",
 		success:function(ret){
 			$('.content').html(ret);
@@ -71,7 +71,7 @@ $('.hybz').click(function(){
 $('.yhgl').click(function(){
 	$.ajax({
 		type:"get",
-		url:"/Home/Wiki/wiki",
+		url:"/Manager/User/index",
 		dataType:"html",
 		success:function(ret){
 			$('.content').html(ret);
@@ -82,7 +82,7 @@ $('.yhgl').click(function(){
 $('.xtsz').click(function(){
 	$.ajax({
 		type:"get",
-		url:"/Home/About/about",
+		url:"/Manager/Setting/about",
 		dataType:"html",
 		success:function(ret){
 			$('.content').html(ret);
