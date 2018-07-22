@@ -1,0 +1,1 @@
+<?php if (!defined('THINK_PATH')) exit();?><div class="media"><div class="media-left"><img style="width:100px;height:100px;" src="" alt="" class="media-object" /></div><div class="media-body"><h4 class="media-heading"><a href=""></a></h4><p>......</p></div></div><hr/>

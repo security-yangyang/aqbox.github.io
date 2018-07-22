@@ -1,0 +1,1 @@
+<?php if (!defined('THINK_PATH')) exit();?></div><script>$height = $(window).height()-140;$('.w-930').css('height'.$height+'px')</script>'
