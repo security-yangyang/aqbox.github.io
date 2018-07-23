@@ -11,4 +11,9 @@ class SettingController extends Controller
     {
         $this->display();
     }
+
+    public function xtsz()
+    {
+        $this->show('系统设置');
+    }
 }

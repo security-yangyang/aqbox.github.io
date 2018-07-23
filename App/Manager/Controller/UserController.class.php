@@ -11,4 +11,9 @@ class UserController extends Controller
     {
         $this->display();
     }
+
+    public function yhgl()
+    {
+        $this->show('用户管理');
+    }
 }

@@ -1,1 +1,0 @@
-<?php if (!defined('THINK_PATH')) exit();?><div class="media"><div class="media-left"><img style="width:100px;height:100px;" src="http://7xkk1o.com1.z0.glb.clouddn.com/defaultAttachmentURL2.PNG" alt="" class="media-object" /></div><div class="media-body"><h4 class="media-heading">Helloworld</h4><p>我是你的，你还是我的......</p></div></div><hr/>

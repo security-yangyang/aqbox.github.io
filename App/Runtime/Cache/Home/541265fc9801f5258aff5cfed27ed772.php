@@ -1,1 +1,0 @@
-<?php if (!defined('THINK_PATH')) exit();?><div style='text-align:center;'>已经到底了</div></div>

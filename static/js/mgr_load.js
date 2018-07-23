@@ -71,7 +71,7 @@ $('.hybz').click(function(){
 $('.yhgl').click(function(){
 	$.ajax({
 		type:"get",
-		url:"/Manager/User/index",
+		url:"/Manager/User/yhgl",
 		dataType:"html",
 		success:function(ret){
 			$('.content').html(ret);
@@ -82,7 +82,7 @@ $('.yhgl').click(function(){
 $('.xtsz').click(function(){
 	$.ajax({
 		type:"get",
-		url:"/Manager/Setting/about",
+		url:"/Manager/Setting/xtsz",
 		dataType:"html",
 		success:function(ret){
 			$('.content').html(ret);

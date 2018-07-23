@@ -11,4 +11,19 @@ class StandardController extends Controller
     {
         $this->display();
     }
+
+    public function xgb()
+    {
+        $this->show('新国标');
+    }
+
+    public function lgb()
+    {
+        $this->show('老国标');
+    }
+
+    public function hybz()
+    {
+        $this->show('行业标准');
+    }
 }

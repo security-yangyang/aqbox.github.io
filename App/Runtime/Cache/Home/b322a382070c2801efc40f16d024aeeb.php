@@ -1,1 +1,0 @@
-<?php if (!defined('THINK_PATH')) exit();?><div class="w-930" style="padding:30px 100px;overflow:scroll;overflow-x:hidden;width:930px;border-bottom:1px solid gray">
