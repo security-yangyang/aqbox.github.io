@@ -1,7 +1,7 @@
 <?php
 return array(
     'COMPANY_NAME'  =>  '安全盒', 
-    'FOOTER_TEXT'   => 'AQBOX.TOP 保留所有权利',
+    'FOOTER_TEXT'   => 'AQBOX.TOP 保留所有权利，本应用系统采用ThinkPHP开源框架，开发者：杨洋',
     'VERTIFY'   =>  false,
     
     'DB_TYPE'   => 'mysqli', // 数据库类型

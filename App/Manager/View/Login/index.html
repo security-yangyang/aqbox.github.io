@@ -62,7 +62,7 @@
 		<div class="header">
 			<div class="w-1200">
 				<div class="logo">
-					{$COMPANY_NAME}
+					{$COMPANY_NAME}-后台管理系统
 				</div>
 				<div class="userinfo"><?php echo $_SESSION['MANAGER']; ?></div>
 			</div>
@@ -94,6 +94,8 @@
 		$('input').focus(function(){
 			$('.err').hide();
 		})
+		$mainHeight = $(window).height()-70;
+		$('.w-930').css('height',$mainHeight+'px');
 		$('.login_btn').click(function(){
 			var data = {'username':$('.username').val(),'password':$('.password').val(),'vertify':$('.vertify').val()};
 			$.ajax({
@@ -112,5 +114,4 @@
 			})
 		})
 	</script>
-	<script src="/static/js/public.js"></script>
 </html>

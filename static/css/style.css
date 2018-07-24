@@ -31,7 +31,6 @@ body,div{
 }
 .w-930{
 	margin:0 auto;
-	padding-top:100px;
 	background:ghostwhite;
 }
 .header .w-1200 .userinfo{
@@ -53,7 +52,8 @@ body,div{
 	float: left;
 	margin-left:-30px;
 	width:270px;
-	background: #383D45;
+	/*background: #383D45;*/
+	background: #0f1d30;
 	padding-top:14px;
 }
 .container .navBar ul,li{
@@ -115,6 +115,8 @@ body,div{
 	height:70px;
 	text-align: center;
 	line-height: 70px;
+	background:#393d49;
+	color:white;
 }
 body{
 	background:snow;
