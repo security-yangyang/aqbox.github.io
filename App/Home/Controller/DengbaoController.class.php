@@ -19,7 +19,7 @@ class DengbaoController extends Controller
     public function zzdj()
     {
         if ($this->is_login()) {
-            $this->show('等保咨询');
+            $this->display('index');
         }
     }
 

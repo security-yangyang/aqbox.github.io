@@ -18,3 +18,15 @@ $('.enter_del').click(function(){
 		}
 	})
 })
+$('.mspg').click(function(){
+	//$('#loading').addClass('loading');
+	$(this).html('请等待...');
+	setTimeout(function(){
+		$('.online-ret').show();
+		$('.mspg').html('马上评估');
+	},3000);
+})
+$('#loading').click(function(){
+	//$(this).removeClass('loading');
+	$('.mspg').html('马上评估');
+})

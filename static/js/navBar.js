@@ -2,6 +2,7 @@ $height = $(window).height()-140;
 $width = $(window).width();
 $('.navBar').css('height',$height+'px');
 $('.content').css('height',$height+'px');
+$('body').css('width',$width);
 
 
 $('.dbzx').click(function(){

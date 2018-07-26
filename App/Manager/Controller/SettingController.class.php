@@ -9,7 +9,7 @@ class SettingController extends Controller
 
     public function check(){
         if (isset($_SESSION['MANAGER'])) {
-            $this->display();
+            return true;
         } else {
             echo "<script>window.location.href='/Manager/Login/index'</script>";
         }
