@@ -39,9 +39,33 @@
 		display:inline-block;
 		border-radius:4px;
 	}
-.online-ret {
-	display:none;
-}
+	.online-ret {
+		display:none;
+	}
+	.wz{
+		padding:20px 0px;
+		border:1px solid #ccc;
+		border-radius:5px;
+		width:100%;
+		height:230px;
+	}
+	.Box{
+		width:254.3px;
+		height:180px;
+		float:left;
+		border-right:1px solid #ccc;
+		text-align:center;
+	}
+	.Box span{
+		display:block;
+		line-height:28px;
+	}
+	.Box h3{
+		padding-bottom:10px;
+	}
+	.mspg{
+		margin-bottom:20px;
+	}
 </style>
 <link rel="stylesheet" type="text/css" href="../css/bootstrap.css"/>
 <div class="w-930">
@@ -75,6 +99,20 @@
 				<label for="yxgj"><div class="in-tag"><input type="radio" name="aqyx" id="yxgj" value="" /> 影响国家安全</div></label>
 			</div>
 			<button class="btn btn-primary mspg">马上评估</button><span class="online-ret"><strong>提示：</strong>您的信息系统在线评估定级结果为第三级，仅供参考！</span>
+			<div class="wz">
+				<div class="Box">
+					<h3>等保资料</h3>
+					<span>信息系统安全现状自查辅导</span>
+					<span>信息系统安全现状自查辅导</span>
+					<span>信息系统安全现状自查辅导</span>
+				</div>
+				<div class="Box">
+					<h3>测评辅导</h3>
+				</div>
+				<div class="Box" style="border:none;">
+					<h3>备案辅导</h3>
+				</div>
+			</div>
 		</div>
 		<div style="margin:15px 80px;" class="fzdj tab-pane fade in" id="fzdj">
 			<div>helloworld</div>
@@ -83,7 +121,7 @@
 	</div>
 </div>
 <script type="text/javascript">
-$mainHeight = $(window).height()-140;
+$($mainHeight = $(window).height()-140;
 $('.w-930').css('height',$mainHeight+'px');
 </script>
 <script src="/static/js/public.js"></script>
